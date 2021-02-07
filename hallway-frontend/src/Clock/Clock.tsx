@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './Clock.css';
+import { formatHourDigits } from './clockFormatter';
 
 const Clock = () => {
 
@@ -18,7 +19,7 @@ const Clock = () => {
     }, []);
 
 
-    return (<div className="hourclock">{now.getHours()}:{now.getMinutes()}:{now.getSeconds()}</div>)
+    return (<div className="hourclock">{formatHourDigits(now.getHours())}:{formatHourDigits(now.getMinutes())}:{formatHourDigits(now.getSeconds())}</div>)
 
 }
 
