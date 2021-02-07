@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(138, 35, 135), rgb(233, 64, 87), rgb(242, 113, 33)) repeat scroll 0% 0%;
 }
 
 .App-logo {
